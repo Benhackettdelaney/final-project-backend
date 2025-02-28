@@ -15,7 +15,7 @@ db.init_app(app)
 migrate.init_app(app, db)
 
 
-app.register_blueprint(movie_bp, url_prefix='/api')
+app.register_blueprint(movie_bp, url_prefix='/movies')
 
 @app.route('/', methods=['GET'])
 def hello_world():
